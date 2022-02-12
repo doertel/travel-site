@@ -19,12 +19,7 @@ module.exports = {
 				test: /\.css$/i,
 				use: [
 					'style-loader',
-					{
-						loader: 'css-loader',
-						options: {
-							url: false
-						}
-					},
+					'css-loader?url=false',
 					{ loader: 'postcss-loader', options: { postcssOptions: { plugins: postCSSPlugins } } }
 				]
 			}
