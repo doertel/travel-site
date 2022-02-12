@@ -11,15 +11,19 @@ module.exports = {
 		filename: 'bundled.js',
 		path: path.resolve(__dirname, 'app')
 	},
+	devServer: {
+		static: path.join(__dirname, 'app'),
+		hot: true,
+		port: 3000
+	},
 	mode: 'development',
-	watch: true,
 	module: {
 		rules: [
 			{
 				test: /\.css$/i,
 				use: [
 					'style-loader',
-					'css-loader?url=false',
+					{ loader: 'css-loader', options: { url: false } },
 					{ loader: 'postcss-loader', options: { postcssOptions: { plugins: postCSSPlugins } } }
 				]
 			}
