@@ -11,7 +11,14 @@
 		"type": "git",
 		"url": "git+https://github.com/doertel/travel-site.git"
 	},
-	"keywords": [ "Outdoor", "Travel", "HTML", "CSS", "Node", "git" ],
+	"keywords": [
+		"Outdoor",
+		"Travel",
+		"HTML",
+		"CSS",
+		"Node",
+		"git"
+	],
 	"author": "Detlef Oertel",
 	"license": "ISC",
 	"bugs": {
@@ -27,6 +34,7 @@
 		"css-loader": "^6.6.0",
 		"postcss-import": "^14.0.2",
 		"postcss-loader": "^6.2.1",
+		"postcss-mixins": "^9.0.1",
 		"postcss-nested": "^5.0.6",
 		"postcss-simple-vars": "^6.0.3",
 		"style-loader": "^3.3.1",
