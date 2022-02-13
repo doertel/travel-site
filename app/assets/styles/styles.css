@@ -4,4 +4,5 @@
 @import 'base/_global';
 @import 'modules/_btn.css';
 @import 'modules/_wrapper';
+@import 'modules/_page-section';
 @import 'modules/_large-hero';
